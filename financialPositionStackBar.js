@@ -218,3 +218,4 @@ class FinancialBalanceChart extends HTMLElement {
 customElements.define('com-autodeck-custom_stack_bar', FinancialBalanceChart);
 
 })();
+
