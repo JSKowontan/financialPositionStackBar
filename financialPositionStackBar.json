@@ -1,0 +1,54 @@
+{
+  "id": "com.autodeck.financialPositionStackBar",
+  "name": "Financial Position Stack Bar",
+  "version": "1.0.0",
+  "description": "A custom widget showing the financial position of assets and liabilities.",
+  "newInstancePrefix": "financialPositionStackBar",
+  "vendor": "autodeck.com",
+  "eula": "autodeck.com",
+  "license": "MIT",
+  "icon": "https://cdn.jsdelivr.net/gh/Autodeck/financialPositionStackBar@1.0.0/icon.png",
+  "imports": [
+    "datasource",
+    "planning-model"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "financialPositionStackBar",
+      "url": "https://cdn.jsdelivr.net/gh/Autodeck/financialPositionStackBar@1.0.0/financialPositionStackBar.js",
+      "integrity": "sha256-rpQ7evmwjSTNGlnvP6GNdnU3in0Ut5q2NlxgA4sFcnA=",
+      "ignoreIntegrity": false
+    },
+    {
+      "kind": "builder",
+      "tag": "financialPositionStackBar-builder",
+      "url": "https://cdn.jsdelivr.net/gh/Autodeck/financialPositionStackBar@1.0.0/financialPositionStackBar.js",
+      "integrity": "sha256-rpQ7evmwjSTNGlnvP6GNdnU3in0Ut5q2NlxgA4sFcnA=",
+      "ignoreIntegrity": false
+    }
+  ],
+  "properties": {
+    "tableTitle": {
+      "description": "Name of Chart",
+      "type": "string",
+      "default": "Financial Position (Current/Non-Current)"
+    },
+    "searching": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "methods": {
+    "setChartData": {
+      "description": "Sets the chart data.",
+      "parameters": [
+        {
+          "name": "RecordsArray",
+          "type": "Selection[]"
+        }
+      ]
+    }
+  },
+  "events": {}
+}
