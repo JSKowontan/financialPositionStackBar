@@ -15,14 +15,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "financialPositionStackBar",
+      "tag": "financialPosition-StackBar",
       "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
-      "tag": "financialPositionStackBar-builder",
+      "tag": "financialPosition-StackBar-builder",
       "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
@@ -52,6 +52,3 @@
   },
   "events": {}
 }
-
-
-
