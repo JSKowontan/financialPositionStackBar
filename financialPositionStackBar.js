@@ -206,4 +206,4 @@ class FinancialBalanceChart extends HTMLElement {
     }
 }
 
-customElements.define('financialPosition-StackBar', FinancialBalanceChart);
+customElements.define('com-autodeck-custom_stack_bar', FinancialBalanceChart);
