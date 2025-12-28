@@ -16,14 +16,14 @@
     {
       "kind": "main",
       "tag": "com-autodeck-custom_stack_bar",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar_2.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
       "tag": "com-autodeck-custom_stack_bar-builder",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar_2.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
     }
@@ -52,3 +52,4 @@
   },
   "events": {}
 }
+
