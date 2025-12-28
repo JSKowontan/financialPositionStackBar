@@ -1,3 +1,12 @@
+(function () {
+  const prepared = document.createElement("template");
+  prepared.innerHTML = `
+        <style>
+        </style>
+        <div id="root" style="width: 100%; height: 100%;">
+        </div>
+      `;
+
 class FinancialBalanceChart extends HTMLElement {
     constructor() {
         super();
@@ -207,3 +216,5 @@ class FinancialBalanceChart extends HTMLElement {
 }
 
 customElements.define('com-autodeck-custom_stack_bar', FinancialBalanceChart);
+
+})();
