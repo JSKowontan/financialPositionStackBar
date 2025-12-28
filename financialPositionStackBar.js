@@ -7,7 +7,7 @@
         </div>
       `;
 
-class FinancialBalanceChart extends HTMLElement {
+class FinancialChart extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -215,6 +215,7 @@ class FinancialBalanceChart extends HTMLElement {
     }
 }
 
-customElements.define('com-autodeck-custom_stack_bar', FinancialBalanceChart);
+customElements.define('com-autodeck-custom_stack_bar', FinancialChart);
+
 
 })();
