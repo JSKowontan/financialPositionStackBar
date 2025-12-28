@@ -1,5 +1,5 @@
 {
-  "id": "com.autodeck.financialPositionStackBar",
+  "id": "com.autodeck.custom_stack_bar",
   "name": "Financial Position Stack Bar",
   "version": "1.0.0",
   "description": "A custom widget showing the financial position of assets and liabilities.",
@@ -15,14 +15,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "financialPosition-StackBar",
+      "tag": "com-autodeck-custom_stack_bar",
       "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
-      "tag": "financialPosition-StackBar-builder",
+      "tag": "com-autodeck-custom_stack_bar-builder",
       "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar.js",
       "integrity": "sha256-e5urh+Ac4WxJ7oDgutvZW70mCZRTkaWIGVn3viOURe0=",
       "ignoreIntegrity": false
