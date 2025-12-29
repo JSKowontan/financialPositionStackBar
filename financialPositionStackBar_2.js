@@ -19,11 +19,11 @@ class FinancialBalanceChart extends HTMLElement {
     }
 
     set data(payload) {
-        //this._data = payload;
-        globalThis._data = [
-            { label: "Assets", current: 17.1, nonCurrent: 3.6 },
-            { label: "Liabilities", current: 7.1, nonCurrent: 1.2 }
-        globalThis.render();
+        this._data = payload;
+        //this._data = [
+        //    { label: "Assets", current: 17.1, nonCurrent: 3.6 },
+        //    { label: "Liabilities", current: 7.1, nonCurrent: 1.2 }
+        //this.render();
     }
 
     get data() {
