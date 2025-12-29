@@ -20,10 +20,7 @@ class FinancialBalanceChart extends HTMLElement {
 
     set data(payload) {
         this._data = payload;
-        //this._data = [
-        //    { label: "Assets", current: 17.1, nonCurrent: 3.6 },
-        //    { label: "Liabilities", current: 7.1, nonCurrent: 1.2 }
-        //this.render();
+        this.render();
     }
 
     get data() {
@@ -124,9 +121,21 @@ class FinancialBalanceChart extends HTMLElement {
         let chartRows = '';
         if (this._data && this._data.length > 0) {
             chartRows = this._data.map((item) => {
-                const total = item.current + item.nonCurrent;
-                const currentPct = ((item.current / total) * 100).toFixed(1);
-                const nonCurrentPct = ((item.nonCurrent / total) * 100).toFixed(1);
+                // --- MODIFICATION START: Handle String Inputs ---
+                // We use parseFloat to ensure we are doing math on numbers
+                const valCurrent = parseFloat(item.current);
+                const valNonCurrent = parseFloat(item.nonCurrent);
+                
+                // Safety check in case of bad data (NaN)
+                const safeCurrent = isNaN(valCurrent) ? 0 : valCurrent;
+                const safeNonCurrent = isNaN(valNonCurrent) ? 0 : valNonCurrent;
+
+                const total = safeCurrent + safeNonCurrent;
+                
+                // Avoid division by zero
+                const currentPct = total > 0 ? ((safeCurrent / total) * 100).toFixed(1) : 0;
+                const nonCurrentPct = total > 0 ? ((safeNonCurrent / total) * 100).toFixed(1) : 0;
+                // --- MODIFICATION END ---
 
                 return `
                 <div class="chart-row">
