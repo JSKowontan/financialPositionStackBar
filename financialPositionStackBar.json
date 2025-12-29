@@ -7,7 +7,7 @@
   "vendor": "autodeck.com",
   "eula": "autodeck.com",
   "license": "MIT",
-  "icon": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/icon.png",
+  "icon": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.2.0/icon.png",
   "imports": [
     "datasource",
     "planning-model"
@@ -16,14 +16,14 @@
     {
       "kind": "main",
       "tag": "com-autodeck-custom_stack_bar",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar_2.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.2.0/financialPositionStackBar_2.js",
       "integrity": "sha256-WEgjTxC8HZEmDwebICg7YDQhg0tMZij+CmXBFdi8F5o=",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
       "tag": "com-autodeck-custom_stack_bar-builder",
-      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@main/financialPositionStackBar_2.js",
+      "url": "https://cdn.jsdelivr.net/gh/JSKowontan/financialPositionStackBar@1.2.0/financialPositionStackBar_2.js",
       "integrity": "sha256-WEgjTxC8HZEmDwebICg7YDQhg0tMZij+CmXBFdi8F5o=",
       "ignoreIntegrity": false
     }
@@ -52,5 +52,6 @@
   },
   "events": {}
 }
+
 
 
